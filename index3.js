@@ -5,9 +5,14 @@ app.listen(8080,()=>{
 })
 app.get("/",(req,res)=>{
 console.log(req.url)
-res.send("response from server for /  ")
+res.send("response from server for /")
 })
 app.get("/home", (req, res) => {
     console.log(req.url)
-  res.send("Response from server for /home page");
+  res.send("Response from server for /home");
+});
+
+app.get("/home/page1", (req, res) => {
+    console.log(req.url)
+  res.send("Response from server for /home/page1");
 });
